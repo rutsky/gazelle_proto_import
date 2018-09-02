@@ -5,7 +5,8 @@ proto_library(
     name = "server_proto",
     srcs = ["server.proto"],
     visibility = ["//visibility:public"],
-    deps = ["//github.com/rutsky/gazelle_proto_import/hello_proto:hello_proto_proto"],
+    #deps = ["//github.com/rutsky/gazelle_proto_import/hello_proto:hello_proto_proto"],
+    deps = ["//hello_proto"],
 )
 
 go_proto_library(
