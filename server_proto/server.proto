@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package server;
+
+import "github.com/rutsky/gazelle_proto_import/hello_proto/hello.proto";
+
+option go_package = "github.com/rutsky/gazelle_proto_import/server_proto;server"; 
+
+service Greeter {
+  rpc SayHello (hello.HelloRequest) returns (hello.HelloReply) {}
+}

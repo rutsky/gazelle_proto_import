@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package hello;
+
+option go_package = "github.com/rutsky/gazelle_proto_import/hello_proto;hello"; 
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloReply {
+  string message = 1;
+}
